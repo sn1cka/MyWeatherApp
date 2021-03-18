@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activities.WeatherActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" />
+
+    <Button
+        android:id="@+id/retryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/retry" />
+
+    <LinearLayout
+        android:id="@+id/weatherContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/weatherTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Температура: 21 °С, ясно"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/feelsLike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ощущается как: 21 °С"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/minMaxTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Макс\мин температура: 10\\12°С"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/windSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Скорость ветра 10 м\с"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/openMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="данные на 10 дней" />
+    </LinearLayout>
+
+
+</LinearLayout>
